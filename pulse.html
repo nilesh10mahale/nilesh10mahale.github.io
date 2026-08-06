@@ -1,0 +1,105 @@
+<!-- PLACEHOLDER CONTENT: this case study is a concept write-up generated for template/demo purposes since no real project details were provided yet. Replace the problem/approach/stats below with your real project before publishing. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<title>Pulse — Nilesh.dev</title>
+<meta name="description" content="Real-time analytics dashboard processing 2M+ events per day with sub-100ms updates." />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo display">NILESH<span class="cursor mono">_</span>DEV</div>
+  <div class="navlinks mono">
+    <a href="index.html">Home</a>
+    <a href="work.html" class="current">Work</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="nav-right">
+    <div class="status"><span class="dot"></span>AVAILABLE FOR PROJECTS</div>
+    <button class="menu-btn" data-menu-btn aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="overlay" data-overlay>
+  <div class="overlay-links display">
+    <a href="index.html">Home</a>
+    <a href="work.html" class="current">Work</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="overlay-foot">
+    <a class="social-btn icon-btn" href="https://github.com/nilesh10mahale" target="_blank" rel="noopener" aria-label="GitHub">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.9 1.58 2.34 1.12 2.91.86.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.32.1-2.75 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.33 2.75-1.05 2.75-1.05.55 1.43.2 2.49.1 2.75.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9v2.82c0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+    </a>
+    <a class="social-btn icon-btn" href="mailto:nileshmahale707@gmail.com" aria-label="Email">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="m4 6 8 7 8-7"/></svg>
+    </a>
+    <span class="mono" data-clock style="color: var(--muted); font-size: 12px;"></span>
+  </div>
+</div>
+
+<header class="page-hero">
+  <div class="eyebrow mono"><span class="bar"></span>[WEB APP]</div>
+  <h1 class="page-title display">PULSE</h1>
+  <p class="page-sub">Real-time analytics dashboard processing 2M+ events per day with sub-100ms updates.</p>
+
+  <div class="case-hero-thumb" style="background:linear-gradient(135deg, #6C63FF 0%, #2E2A78 100%)"></div>
+
+  <div class="case-meta">
+    <div class="case-meta-item"><span class="k mono">ROLE</span><span class="v">Solo developer</span></div>
+    <div class="case-meta-item"><span class="k mono">TIMELINE</span><span class="v">6 weeks</span></div>
+    <div class="case-meta-item"><span class="k mono">STACK</span><span class="v">React / WebSockets / D3.js</span></div>
+  </div>
+</header>
+
+<section class="section" style="text-align:left;">
+  <div class="case-block reveal">
+    <h3>The Problem</h3>
+    <p>Teams monitoring high-traffic products needed to see what was happening right now, not five minutes ago after a page refresh. Existing dashboards polled on an interval, which meant stale numbers during the moments that mattered most — traffic spikes, error surges, campaign launches.</p>
+  </div>
+
+  <div class="case-block reveal">
+    <h3>The Approach</h3>
+    <ul>
+      <li>Designed a WebSocket-based event pipeline so the UI updates the instant new data arrives, instead of polling on a timer.</li>
+      <li>Built custom D3.js visualizations tuned for high-frequency updates without janky re-renders.</li>
+      <li>Added client-side batching and throttling so a 2M-events-a-day firehose doesn't overwhelm the browser.</li>
+    </ul>
+  </div>
+
+  <div class="case-block reveal">
+    <h3>Key Decisions</h3>
+    <p>The trickiest part was keeping the UI smooth under load. Naive re-rendering on every event would have killed frame rate, so updates are batched into 100ms windows and diffed before touching the DOM. That's what gets the sub-100ms perceived latency without sacrificing render performance.</p>
+  </div>
+
+  <div class="case-block reveal">
+    <h3>Results</h3>
+    <div class="case-stats">
+      <div class="case-stat"><span class="num display">2M+</span><span class="label">EVENTS / DAY</span></div>
+      <div class="case-stat"><span class="num display">&lt;100ms</span><span class="label">UPDATE LATENCY</span></div>
+      <div class="case-stat"><span class="num display">60fps</span><span class="label">UNDER LOAD</span></div>
+    </div>
+  </div>
+
+  <div class="case-nav">
+    <a href="work.html">← <span>All Work</span></a>
+    <a href="orbit.html" class="next">Next Project<span>Orbit →</span></a>
+  </div>
+</section>
+
+<div class="footbar">
+  <span>© 2026 NILESH.DEV — ALL RIGHTS RESERVED</span>
+  <span class="mono" data-clock></span>
+  <a href="#" class="totop mono" data-totop>BACK TO TOP
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+

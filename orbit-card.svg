@@ -1,0 +1,24 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="orbitTitle orbitDesc">
+  <title id="orbitTitle">Orbit project preview</title>
+  <desc id="orbitDesc">Commerce checkout flow illustration with warm orange gradient cards.</desc>
+  <defs>
+    <linearGradient id="gradOrbit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B4A" />
+      <stop offset="100%" stop-color="#7A2E1E" />
+    </linearGradient>
+    <filter id="shadowOrbit" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="30" flood-color="#000" flood-opacity="0.18" />
+    </filter>
+  </defs>
+  <rect width="1200" height="800" rx="36" fill="url(#gradOrbit)" filter="url(#shadowOrbit)" />
+  <rect x="130" y="160" width="420" height="520" rx="32" fill="rgba(255,255,255,0.16)" />
+  <rect x="710" y="180" width="320" height="420" rx="32" fill="rgba(255,255,255,0.28)" />
+  <rect x="170" y="220" width="340" height="90" rx="20" fill="#FFFFFF" />
+  <rect x="730" y="240" width="240" height="70" rx="18" fill="#FFFFFF" />
+  <rect x="170" y="360" width="240" height="120" rx="18" fill="rgba(255,255,255,0.4)" />
+  <rect x="730" y="340" width="260" height="120" rx="18" fill="rgba(255,255,255,0.4)" />
+  <path d="M200 560 C330 520 520 620 640 560" stroke="#FFFFFF" stroke-width="14" fill="none" opacity="0.9" />
+  <circle cx="880" cy="520" r="50" fill="#FFFFFF" opacity="0.9" />
+  <text x="170" y="120" font-family="'Inter', sans-serif" font-size="64" font-weight="700" fill="#FFFFFF">Orbit</text>
+  <text x="170" y="195" font-family="'Inter', sans-serif" font-size="24" fill="#0A0A0C">High-conversion commerce</text>
+</svg>
